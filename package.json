@@ -1,0 +1,53 @@
+{
+  "name": "p-limiter",
+  "version": "1.0.0",
+  "description": "Zero dependency, lightweight concurrent Promise limiter",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "rollup -c --watch",
+    "build": "rollup -c",
+    "release": "npm run build && standard-version"
+  },
+  "devDependencies": {
+    "rollup": "^2.75.5",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-typescript-paths": "^1.3.1",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/islizeqiang/p-limiter.git"
+  },
+  "keywords": [
+    "promise",
+    "limit",
+    "limited",
+    "concurrency",
+    "throttle",
+    "throat",
+    "rate",
+    "batch",
+    "task",
+    "queue",
+    "async",
+    "await",
+    "promises",
+    "bluebird"
+  ],
+  "author": "islizeqiang",
+  "license": "MIT",
+  "homepage": "https://github.com/islizeqiang/p-limiter#readme",
+  "bugs": {
+    "url": "https://github.com/islizeqiang/p-limiter/issues"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  }
+}
